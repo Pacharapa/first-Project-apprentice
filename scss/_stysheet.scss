@@ -1,0 +1,76 @@
+body {
+	font-family:"Sukhumvit" ;
+	
+	.desc {
+		display: none;
+	}
+	
+}
+.img1{
+	display: none;
+}
+.img2{
+	@extend .img1;
+}
+
+.test {
+		display:none;
+		position:relative;
+		padding:1px;
+		margin:1px;
+}
+
+.fade-in{
+animation: fadeIn 5s;
+
+}
+@keyframes fadeIn{
+	from {
+	opacity: 0;
+	}
+	to {
+	opacity: 2;
+
+	}
+}
+
+h2 {
+	padding-top:2px; 
+	padding-bottom: 2px;
+	text-decoration: underline;
+    font-style: normal;
+    font-weight: bold;
+}
+
+h4{
+	padding-top: 2px;
+	padding-bottom: 4px;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+p {
+	letter-spacing:0.2px;
+	font-weight: bold;
+	line-height: 20px;
+	text-align: justify;
+	overflow: justify;
+	font-style: normal;
+    font-family: "MyriadPro-Regular";
+}
+div .image{
+	padding-bottom: 1px;
+	margin-bottom: 1px;
+}
+
+.footer{
+	@extend body ;
+	background-color: #DCDCDC;
+	padding: 15px;
+}
+.paragragh1{
+	padding-bottom: 12px;
+}
+.paragragh2{
+	padding-bottom: 12px;
+}
